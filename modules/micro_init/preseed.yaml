@@ -1,14 +1,17 @@
 lookup_subnet: 192.168.20.50/24
 systems:
 - name: micro-01
-  ceph:
-    path: /dev/sdb
-    wipe: true
+  storage:
+    ceph:
+      path: /dev/sdb
+      wipe: true
 - name: micro-02
-  ceph:
-    path: /dev/sdb
-    wipe: true
+  storage:
+    ceph:
+      path: /dev/sdb
+      wipe: true
 - name: micro-03
-  ceph:
-    path: /dev/sdb
-    wipe: true
+  storage:
+    ceph:
+      path: /dev/sdb
+      wipe: true
