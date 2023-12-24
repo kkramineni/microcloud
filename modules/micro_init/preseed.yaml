@@ -3,15 +3,15 @@ systems:
 - name: micro-01
   storage:
     ceph:
-      path: /dev/sdb
-      wipe: true
+      - path: /dev/sdb
+        wipe: true
 - name: micro-02
   storage:
     ceph:
-      path: /dev/sdb
-      wipe: true
+      - path: /dev/sdb
+        wipe: true
 - name: micro-03
   storage:
     ceph:
-      path: /dev/sdb
-      wipe: true
+      - path: /dev/sdb
+        wipe: true
