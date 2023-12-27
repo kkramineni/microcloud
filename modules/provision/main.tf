@@ -75,6 +75,12 @@ resource "vsphere_virtual_machine" "vm-01" {
       dns_suffix_list = ["cloudbricks.local"]
     }
   }
+  lifecycle {
+    ignore_changes = [
+      ept_rvi_mode,
+      hv_mode
+    ]
+  }
 
 
 }
@@ -129,6 +135,12 @@ resource "vsphere_virtual_machine" "vm-02" {
       dns_suffix_list = ["cloudbricks.local"]
     }
   }
+  lifecycle {
+    ignore_changes = [
+      ept_rvi_mode,
+      hv_mode
+    ]
+  }
 
 
 }
@@ -181,6 +193,12 @@ resource "vsphere_virtual_machine" "vm-03" {
       dns_server_list = ["192.168.0.5"]
       dns_suffix_list = ["cloudbricks.local"]
     }
+  }
+  lifecycle {
+    ignore_changes = [
+      ept_rvi_mode,
+      hv_mode
+    ]
   }
 
 
